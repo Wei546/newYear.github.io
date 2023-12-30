@@ -1,39 +1,83 @@
-body {
-  background-image: url("red_flower.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url("red_flower.jpg");
+    background-size: cover;
+    background-repeat: round;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0%;
+    overflow: hidden;
+  }
+  .nav {
+    width: 100%;
+  }
+  .component {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    list-style-type: none;
+  }
+  h1 {
+    font-size: 5.5rem;
+    color: yellow;
+  }
+  #pic1,
+  #pic2,
+  #pic3 {
+    cursor: pointer;
+    transition: all 3s linear;
+    width: 20vw;
+  }
+  #pic1:hover,
+  #pic2:hover,
+  #pic3:hover {
+    animation-duration: 3s;
+    animation-name: down-stretch;
+    height: 100px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
 }
-* {
-  box-sizing: border-box;
-  margin: 0%;
-  overflow: hidden;
-}
-.nav {
-  width: 100%;
-}
-.component {
-  display: flex;
-  justify-content: center;
-  height: 500px;
-  list-style-type: none;
-}
-h1 {
-  font-size: 5.5rem;
-  color: yellow;
-}
-#pic1,
-#pic2,
-#pic3 {
-  cursor: pointer;
-  transition: all 3s linear;
-  height: 50%;
-}
-#pic1:hover,
-#pic2:hover,
-#pic3:hover {
-  animation-duration: 3s;
-  animation-name: down-stretch;
-  height: 500px;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  body {
+    background-image: url("red_flower.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0%;
+    overflow: hidden;
+  }
+  .nav {
+    width: 100%;
+  }
+  .component {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    list-style-type: none;
+  }
+  h1 {
+    font-size: 5.5rem;
+    color: yellow;
+  }
+  #pic1,
+  #pic2,
+  #pic3 {
+    cursor: pointer;
+    transition: all 3s linear;
+    height: 50%;
+  }
+  #pic1:hover,
+  #pic2:hover,
+  #pic3:hover {
+    animation-duration: 3s;
+    animation-name: down-stretch;
+    height: 500px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
 }
